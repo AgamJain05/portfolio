@@ -1,0 +1,39 @@
+---
+import Pattern from "@/components/ui/pattern.astro";
+import Box from "@/components/box/index.astro";
+import BoxTitle from "@/components/box/title.astro";
+import BoxHeader from "@/components/box/header.astro";
+import BoxContent from "@/components/box/content.astro";
+import PageLayout from "@/layouts/page-layout.astro";
+
+export const getStaticPaths = () => {
+  return [
+    { params: { page: undefined } }
+  ];
+};
+---
+
+<PageLayout
+  description="Articles coming soon - stay tuned for insights on software engineering and development."
+  title="Articles"
+>
+  <Pattern />
+
+  <Box>
+    <BoxHeader>
+      <BoxTitle>Articles</BoxTitle>
+    </BoxHeader>
+    <BoxContent>
+      <div class="flex flex-col items-center justify-center py-16 text-center">
+        <div class="space-y-4">
+          <h2 class="text-2xl font-semibold text-foreground">Coming Soon</h2>
+          <p class="text-muted-foreground max-w-md">
+            I'm working on some exciting articles about software engineering, development insights, and technical tutorials. Stay tuned!
+          </p>
+        </div>
+      </div>
+    </BoxContent>
+  </Box>
+
+  <Pattern />
+</PageLayout>
