@@ -22,7 +22,7 @@ const { experience } = Astro.props;
     class="relative space-y-4 pl-1 before:absolute before:left-3 before:h-full before:w-px before:bg-border"
   >
     {
-      experience.positions.map((position, index) => {
+      experience.positions.map((position) => {
         return <ExperiencePositionItem position={position} />;
       })
     }

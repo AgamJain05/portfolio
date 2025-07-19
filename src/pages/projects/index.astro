@@ -29,13 +29,15 @@ const sideProjects = projects.filter(project => project.data.type === "side");
 
   {
     sideProjects.length > 0 && (
-      <Pattern />
-      <Box>
-        <BoxHeader>
-          <BoxTitle>Side Hustles</BoxTitle>
-        </BoxHeader>
-        {sideProjects.map(item => <ProjectItem project={item} />)}
-      </Box>
+      <>
+        <Pattern />
+        <Box>
+          <BoxHeader>
+            <BoxTitle>Side Hustles</BoxTitle>
+          </BoxHeader>
+          {sideProjects.map(item => <ProjectItem project={item} />)}
+        </Box>
+      </>
     )
   }
  
