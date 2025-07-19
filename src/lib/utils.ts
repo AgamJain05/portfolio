@@ -51,7 +51,7 @@ export const getReadingTime = (text: string): string | undefined => {
       return `${Math.ceil(minutes)} min read`;
     }
     return undefined;
-  } catch (e) {
+  } catch {
     return undefined;
   }
 };
