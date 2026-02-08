@@ -28,6 +28,7 @@ const projects = defineCollection({
       preview: z.string().optional(),
       type: z.union([
         z.literal("core"),
+        z.literal("main"),
         z.literal("side"),
       ])
     }),
